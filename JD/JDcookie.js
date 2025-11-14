@@ -5,7 +5,7 @@
  * @author     魔改：https://raw.githubusercontent.com/Lxi0707/Scripts/refs/heads/X/pt_key.js
  * @updated    2025-11-13
  * @version    v0.0.1
- * @link       https://raw.githubusercontent.com/randomshit699/surge/refs/heads/main/JD/JDcookie.js
+ * @link       https://raw.githubusercontent.com/randomshit699/surge/refs/heads/X/JD/JDcookie.js
  * ❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖❖
  * 主要功能：
  * 🔵 自动抓取京东 Cookie（pt_key + pt_pin）
@@ -27,7 +27,7 @@
  * ------------------------------------------
  * [Script]
  * # 京东 cookie 获取 & API 提交（含变更判断）
- * a-JD_pt_key = type=http-request, pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig), script-path=https://raw.githubusercontent.com/randomshit699/surge/refs/heads/main/JD/JDcookie.js
+ * a-JD_pt_key = type=http-request, pattern=^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig), script-path=https://raw.githubusercontent.com/randomshit699/surge/refs/heads/X/JD/JDcookie.js
  *
  * [MITM]
  * hostname = %APPEND% api.m.jd.com
@@ -35,7 +35,7 @@
  * ⚙ Quantumult X 配置
  * ------------------------------------------
  * [rewrite_local]
- * ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) url script-request-header https://raw.githubusercontent.com/randomshit699/surge/refs/heads/main/JD/JDcookie.js
+ * ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) url script-request-header https://raw.githubusercontent.com/randomshit699/surge/refs/heads/X/JD/JDcookie.js
  *
  * [mitm]
  * hostname = api.m.jd.com
@@ -43,7 +43,7 @@
  * ⚙ Loon 配置
  * ------------------------------------------
  * [Script]
- * http-request ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) script-path=https://raw.githubusercontent.com/randomshit699/surge/refs/heads/main/JD/JDcookie.js, timeout=10, tag=京东Cookie获取
+ * http-request ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) script-path=https://raw.githubusercontent.com/randomshit699/surge/refs/heads/X/JD/JDcookie.js, timeout=10, tag=京东Cookie获取
  *
  * [MITM]
  * hostname = api.m.jd.com
